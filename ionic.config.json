@@ -1,6 +1,6 @@
 {
   "name": "dooino",
-  "app_id": "",
+  "app_id": "5c005e88",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

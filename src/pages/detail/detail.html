@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ dooino.getName() }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Header
+    </ion-card-header>
+    <ion-card-content>
+      ID: {{ dooino.getId() }}
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 *ngFor="let inAction of dooino.inActions()">
+        <button ion-button block (click)="runInAction(inAction)">{{ inAction.getName() }}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
